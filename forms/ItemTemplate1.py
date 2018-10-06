@@ -14,3 +14,9 @@ class ItemTemplate1(ItemTemplate1Template):
     """This method is called when the link is clicked"""
     pass
 
+  def delete_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.item.delete()
+    self.remove_from_parent()
+
+
