@@ -1,4 +1,6 @@
 from anvil import *
+import anvil.tables as tables
+from anvil.tables import app_tables
 
 class Form1(Form1Template):
 
@@ -7,4 +9,5 @@ class Form1(Form1Template):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
+    self.repeating_panel_1.items = app_tables.reminders.search()
     

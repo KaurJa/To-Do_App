@@ -1,4 +1,6 @@
 from anvil import *
+import anvil.tables as tables
+from anvil.tables import app_tables
 
 class ItemTemplate1(ItemTemplate1Template):
 
