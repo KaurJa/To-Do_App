@@ -1,12 +1,26 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"PUTGVY":45,"CZGZZR":15}'}
 components:
 - type: CheckBox
-  properties: {text: check_box_1}
+  properties: {role: null, align: left, tooltip: '', border: '', enabled: true, foreground: '',
+    visible: true, text: '', font_size: null, font: '', spacing_above: small, spacing_below: small,
+    italic: false, background: '', bold: false, checked: false, underline: false}
   name: check_box_1
   layout_properties: {grid_position: 'HBNZLZ,PUTGVY'}
   data_bindings:
   - {property: text, code: 'self.item[''task'']'}
   - {property: checked, code: 'self.item[''Done'']', writeback: true}
+- type: Link
+  properties: {text: link_2}
+  name: edit_link
+  layout_properties: {grid_position: 'HBNZLZ,JPGFAW'}
+  event_bindings: {click: link_2_click}
+- type: Link
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '#b10b0b',
+    visible: true, text: '', font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
+    spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
+    italic: false, background: '', bold: false, underline: false, icon: 'fa:times'}
+  name: delete_link
+  layout_properties: {grid_position: 'HBNZLZ,CZGZZR'}
 item_type: {table_id: 15957}
