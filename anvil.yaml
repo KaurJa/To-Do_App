@@ -1,0 +1,5 @@
+allow_embedding: false
+package_name: Classic 1
+name: Classic 1
+runtime_options: {version: 1, server_version: python2-sandbox}
+services: []
