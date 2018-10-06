@@ -8,9 +8,25 @@ components:
   layout_properties: {slot: default}
   components:
   - type: ColumnPanel
-    properties: {}
+    properties: {col_widths: '{"JANTUZ":40,"BLDTUS":20}'}
     name: column_panel_1
     layout_properties: {grid_position: 'UCRDRV,OKPBQN'}
+    components:
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: 'what
+          do you want to remember?', border: '', enabled: true, foreground: '', visible: true,
+        text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: new_reminder_box
+      layout_properties: {grid_position: 'KUBTHC,JANTUZ'}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Add Reminder, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: 'fa:plus'}
+      name: button_1
+      layout_properties: {grid_position: 'KUBTHC,BLDTUS'}
+      event_bindings: {click: button_1_click}
   - type: RepeatingPanel
     properties: {item_template: ItemTemplate1}
     name: repeating_panel_1
