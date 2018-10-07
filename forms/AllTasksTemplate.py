@@ -20,5 +20,11 @@ class AllTasksTemplate(AllTasksTemplateTemplate):
     alert(TaskEdit(item=self.item), title= "edit task details", Large=True)
     self.refresh_data_bindings()
 
+  def task_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+#    alert('hello how are you?')
+    alert(self.item['description'])
+
+
 
 

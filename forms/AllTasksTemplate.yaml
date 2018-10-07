@@ -19,6 +19,7 @@ components:
   layout_properties: {grid_position: 'HBNZLZ,JVULKX'}
   data_bindings:
   - {property: text, code: 'self.item[''task'']'}
+  event_bindings: {click: task_link_click}
 - type: Link
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: '', font_size: null, wrap_on: mobile, font: '', col_spacing: medium, spacing_above: small,
