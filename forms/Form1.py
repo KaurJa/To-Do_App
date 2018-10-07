@@ -16,7 +16,7 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    new_row = app_tables.reminders.add_row(task=self.new_reminder_box.text, Done=False )
-    existing = list(self.repeating_panel_1.items) + [new_row]
-    self.repeating_panel_1.items = existing
+#    new_row = app_tables.reminders.add_row(task=self.new_reminder_box.text, Done=False )
+#    existing = list(self.repeating_panel_1.items) + [new_row]
+#    self.repeating_panel_1.items = existing
 
