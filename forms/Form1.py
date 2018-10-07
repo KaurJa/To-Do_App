@@ -9,6 +9,8 @@ class Form1(Form1Template):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
+    #this line of code display all the tasks from reminder data table
+    #this line detects a row with task from reminder data table
     self.repeating_panel_1.items = app_tables.reminders.search()
     
 
