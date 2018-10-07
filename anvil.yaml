@@ -1,7 +1,7 @@
 allow_embedding: false
 package_name: TODOLISTAPP
 name: TODO LIST APP
-startup_form: Form1
+startup_form: AllTasks
 renamed: true
 runtime_options: {version: 1, server_version: python2-sandbox}
 services:

@@ -2,8 +2,7 @@ from anvil import *
 import anvil.tables as tables
 from anvil.tables import app_tables
 
-class Form1(Form1Template):
-
+class AllTasks(AllTasksTemplate):
   def __init__(self, **properties):
     # You must call self.init_components() before doing anything else in this function
     self.init_components(**properties)
