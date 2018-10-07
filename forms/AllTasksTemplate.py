@@ -3,8 +3,7 @@ import anvil.tables as tables
 from anvil.tables import app_tables
 from TaskEdit import TaskEdit
 
-class ItemTemplate1(ItemTemplate1Template):
-
+class AllTasksTemplate(AllTasksTemplateTemplate):
   def __init__(self, **properties):
     # You must call self.init_components() before doing anything else in this function
     self.init_components(**properties)
