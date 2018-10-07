@@ -2,6 +2,7 @@ from anvil import *
 import anvil.tables as tables
 from anvil.tables import app_tables
 from TaskEdit import TaskEdit
+from datetime import datetime
 
 class AllTasksTemplate(AllTasksTemplateTemplate):
   def __init__(self, **properties):
@@ -23,7 +24,22 @@ class AllTasksTemplate(AllTasksTemplateTemplate):
   def task_link_click(self, **event_args):
     """This method is called when the link is clicked"""
 #    alert('hello how are you?')
-    alert(self.item['description'])
+#this line pops up a description when task link is clicked
+    description_task = self.item['description']
+#this line pops up when the task was completed on(including date and time)
+    current_time = self.item['completed on'].strftime('%b' ' %d' ' %y')
+#alert() is what makes description_task and current_time pops up together
+    alert(description_task + '\n' 'Task completed on:' + current_time)
+
+  def check_box_1_change(self, **event_args):
+    """This method is called when this checkbox is checked or unchecked"""
+    if self.item['Done'] == True:
+      self.item['completed on'] = datetime.now()
+      print(self.item['completed on'] . strftime('%b'' %d'' %y'))
+        
+        
+    
+
 
 
 
