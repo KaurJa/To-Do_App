@@ -44,8 +44,9 @@ class AllTasksTemplate(AllTasksTemplateTemplate):
     if self.item['Done'] == True:
       self.item['completed on'] = datetime.now()
       print(self.item['completed on'] . strftime('%b'' %d'' %y'))
+      n = Notification("Description:" + str(self.item['description']),title= "Completed:" + str(self.item['task']),style="success")
         
-        
+      n.show() 
     
 
 
