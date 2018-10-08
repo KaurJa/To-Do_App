@@ -28,3 +28,14 @@ class AllTasks(AllTasksTemplate):
 #    existing = list(self.repeating_panel_1.items) + [new_row]
 #    self.repeating_panel_1.items = existing
 
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('AllCompletedTasks')
+    
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('AllTasks')
+
+
+
