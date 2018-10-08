@@ -16,4 +16,5 @@ components:
   layout_properties: {grid_position: 'WGYWPS,QUVWNS'}
   data_bindings:
   - {property: text, code: 'self.item[''task'']'}
+  event_bindings: {click: link_1_click}
 item_type: {table_id: 15957}

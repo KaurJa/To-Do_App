@@ -10,7 +10,7 @@ class AllTasks(AllTasksTemplate):
     # Any code you write here will run when the form opens.
     #this line of code display all the tasks from reminder data table(if manually type a task in data table)
     #this line detects a row with task from reminder data table
-    self.repeating_panel_1.items = app_tables.reminders.search()
+    self.repeating_panel_1.items = app_tables.reminders.search(Done=False)
     
 
   def button_1_click(self, **event_args):
@@ -25,8 +25,6 @@ class AllTasks(AllTasksTemplate):
     #this line make the new_reminder_box empty as soon done writing a task
     self.new_reminder_box.text = ''
     
-#    existing = list(self.repeating_panel_1.items) + [new_row]
-#    self.repeating_panel_1.items = existing
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
