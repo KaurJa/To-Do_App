@@ -29,7 +29,7 @@ class AllTasksTemplate(AllTasksTemplateTemplate):
 #this line pops up a description when task link is clicked
     description_task = self.item['description']
   
-    if self.item['completed on']:
+    if self.item['Done']:
       #this line pops up when the task was completed on(including date and time)
       current_time = self.item['completed on'].strftime('%b' ' %d' ' %y')
       #alert() is what makes description_task and current_time pops up together
